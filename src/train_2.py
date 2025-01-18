@@ -45,8 +45,6 @@ rf_mae = mean_absolute_error(y_test_rs, y_pred_rs)
 rf_mse = mean_squared_error(y_test_rs, y_pred_rs)
 rf_f1 = f1_score(y_test_rs, y_pred_rs)
 
-rf_report = classification_report(y_test_rs, y_pred_rs)
-print(rf_report)
 
 
 # # mlflow step
@@ -86,7 +84,3 @@ with mlflow.start_run():
         artifact_path="best_model",
         registered_model_name="Random Forest",
     )
-
-    # Log model artifact
-    mlflow.log_artifact("/workspaces/MissedMatch/artifacts/model.pkl")
-    mlflow.log_artifact("/workspaces/MissedMatch/artifacts/scaler.pkl")
