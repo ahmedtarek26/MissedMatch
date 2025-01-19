@@ -47,7 +47,7 @@ rf.fit(X_train_rs , y_train_rs)
 st.title('Predict the attendance possibility')
 st.subheader("Predict if the patient 'll attend the appointement or no")
 
-X_1=5
+#X_1=5
 
 with st.form(key='best_model'):
 
@@ -80,7 +80,7 @@ with st.form(key='best_model'):
 
         X_1 = rf.predict(scaler.fit_transform(pred.reshape(1,-1)))
 
-if X_1 == 1:
-    st.subheader("This patient predicted to attend the appointment")
-elif X_1 == 0:
-    st.subheader("This patient predicted not to attend the appointment")
+        if X_1 == 1:
+            st.subheader("This patient predicted to attend the appointment")
+        elif X_1 == 0:
+            st.subheader("This patient predicted not to attend the appointment")
