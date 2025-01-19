@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 #Read Proccessed Data
-df = pd.read_csv(r'/data/processed/KaggleV2-May-2016-proccessed.csv')
+df = pd.read_csv(r'data/processed/KaggleV2-May-2016-proccessed.csv')
 
 X_input = df.drop(columns=['No-show'])
 y = df['No-show']
