@@ -35,7 +35,7 @@ for column in numerical_columns:
     plt.clf()  # Clear the current figure
 
 st.subheader('Feature importanc with ELi5')
-st.image(r'\streamlit-app\resources\img\eli5.png')
+st.image(r'/resources/img/eli5.png')
 
 st.subheader('Feature importanc with sklearn')
 st.image(r'/streamlit-app/resources/img/sklearn.png')
