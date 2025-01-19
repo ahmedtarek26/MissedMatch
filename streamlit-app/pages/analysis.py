@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.title('Data Analytics and Visualization')
 
-df = pd.read_csv('../../../data/raw/KaggleV2-May-2016.csv')
+df = pd.read_csv(r'data/raw/KaggleV2-May-2016.csv')
 st.subheader('Data before processing')
 st.write(df.head())
 
