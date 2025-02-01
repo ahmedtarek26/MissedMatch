@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/f862da20eeeb47c287ea112895b31c87/artifacts
+end_time: 1738385832205
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: f862da20eeeb47c287ea112895b31c87
+run_name: zealous-hawk-457
+run_uuid: f862da20eeeb47c287ea112895b31c87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738385827788
+status: 3
+tags: []
+user_id: codespace

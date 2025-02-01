@@ -1,5 +1,6 @@
 # Import libraries
 import mlflow
+import sqlite3
 import pandas as pd
 from sklearn.metrics import classification_report
 from sklearn.metrics import accuracy_score,mean_absolute_error,mean_squared_error,f1_score
@@ -13,7 +14,20 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
 #Read Proccessed Data
-df = pd.read_csv('/workspaces/MissedMatch/data/processed/KaggleV2-May-2016-proccessed.csv')
+# df = pd.read_csv('/workspaces/MissedMatch/data/processed/KaggleV2-May-2016-proccessed.csv')
+
+# Read Processed Data from SQL data base
+connection = sqlite3.connect('data/processed/MissedMatch.db')
+cursor = connection.cursor()
+sql_query = """
+SELECT * FROM KaggleV2
+"""
+rows = cursor.execute(sql_query)
+columns = [col[0] for col in rows.description]
+records = rows.fetchall()
+df = pd.DataFrame(records, columns=columns)
+
+
 
 X_input = df.drop(columns=['No-show'])
 y = df['No-show']
@@ -125,5 +139,4 @@ with mlflow.start_run():
         registered_model_name="Support vector machine",
     )
 
-    mlflow.log_artifact(scaler)
 

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/832d9a9028af4934b83350e8face6887/artifacts
+end_time: 1738385438439
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: 832d9a9028af4934b83350e8face6887
+run_name: bald-bass-735
+run_uuid: 832d9a9028af4934b83350e8face6887
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738385435882
+status: 4
+tags: []
+user_id: codespace
