@@ -10,35 +10,38 @@ from imblearn.under_sampling import NearMiss
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
-#Read Proccessed Data
-df = pd.read_csv(r'data/processed/KaggleV2-May-2016-proccessed.csv')
+# #Read Proccessed Data
+# df = pd.read_csv(r'data/processed/KaggleV2-May-2016-proccessed.csv')
 
-X_input = df.drop(columns=['No-show'])
-y = df['No-show']
+# X_input = df.drop(columns=['No-show'])
+# y = df['No-show']
 
+# scaler = MinMaxScaler()
+# X = scaler.fit_transform(X_input)
+
+# # Balance the Data
+# # Perform NearMiss undersampling to handle imbalanced data
+# print(f'Test dataset samples per class {Counter(y)}')
+ 
+# # Define the NearMiss undersampling object with a sampling strategy of 1 and all available CPU cores
+# nm = NearMiss(sampling_strategy=1, n_jobs=-1)
+ 
+# # Perform NearMiss undersampling on the feature matrix X and target variable y
+# X, y = nm.fit_resample(X, y)
+ 
+# # Print the number of occurrences of each class in the resampled dataset
+# print('Resampled dataset shape %s' % Counter(y))
+
+# # Best Model after testing in the notebook
+# X_train_rs, X_test_rs, y_train_rs, y_test_rs = train_test_split(X, y, test_size = 0.3, random_state = 4)
+
+# rf = RandomForestClassifier( random_state=0 , criterion= 'gini' , max_features='sqrt' , min_samples_split= 2 , n_estimators= 500) 
+#  # we will use GridSearch
+# rf.fit(X_train_rs , y_train_rs)
+
+# read the model from artifacts
+rf = pickle.load(open(r"MissedMatch/mlartifacts/530566757171129986/2da176fbba324cee9758560f398f19ce/artifacts/best_model/model.pkl", 'rb'))
 scaler = MinMaxScaler()
-X = scaler.fit_transform(X_input)
-
-# Balance the Data
-# Perform NearMiss undersampling to handle imbalanced data
-print(f'Test dataset samples per class {Counter(y)}')
- 
-# Define the NearMiss undersampling object with a sampling strategy of 1 and all available CPU cores
-nm = NearMiss(sampling_strategy=1, n_jobs=-1)
- 
-# Perform NearMiss undersampling on the feature matrix X and target variable y
-X, y = nm.fit_resample(X, y)
- 
-# Print the number of occurrences of each class in the resampled dataset
-print('Resampled dataset shape %s' % Counter(y))
-
-# Best Model after testing in the notebook
-X_train_rs, X_test_rs, y_train_rs, y_test_rs = train_test_split(X, y, test_size = 0.3, random_state = 4)
-
-rf = RandomForestClassifier( random_state=0 , criterion= 'gini' , max_features='sqrt' , min_samples_split= 2 , n_estimators= 500) 
- # we will use GridSearch
-rf.fit(X_train_rs , y_train_rs)
-
 
 
 

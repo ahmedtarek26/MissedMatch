@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/8446c9eaff90444485a641b4c5b0df7a/artifacts
+end_time: 1738376367409
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: 8446c9eaff90444485a641b4c5b0df7a
+run_name: wise-chimp-315
+run_uuid: 8446c9eaff90444485a641b4c5b0df7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738376362844
+status: 4
+tags: []
+user_id: codespace

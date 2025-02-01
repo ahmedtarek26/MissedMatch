@@ -4,9 +4,9 @@ from mlflow.models import infer_signature
 
 
 #Load the model
-best_model = pickle.load(open("/workspaces/MissedMatch/artifacts/model.pkl", 'rb'))
-scaler = pickle.load(open("/workspaces/MissedMatch/artifacts/model.pkl", 'rb'))
- 
+best_model = pickle.load(open("/workspaces/MissedMatch/mlartifacts/530566757171129986/2da176fbba324cee9758560f398f19ce/artifacts/best_model/model.pkl", 'rb'))
+#scaler = pickle.load(open("/workspaces/MissedMatch/artifacts/model.pkl", 'rb'))
+
 
 # Define the model hyperparameters
 params = {
@@ -43,8 +43,6 @@ with mlflow.start_run():
         registered_model_name="Random Forest",
     )
 
-    # Log model artifact
-    mlflow.log_artifact(rf)
     
     # Log scaler artifact
-    mlflow.log_artifact(scaler)
+#    mlflow.log_artifact(scaler)

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/2da176fbba324cee9758560f398f19ce/artifacts
+end_time: 1738374465073
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: 2da176fbba324cee9758560f398f19ce
+run_name: upbeat-squid-157
+run_uuid: 2da176fbba324cee9758560f398f19ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738374460496
+status: 3
+tags: []
+user_id: codespace

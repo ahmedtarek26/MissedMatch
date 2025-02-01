@@ -124,3 +124,6 @@ with mlflow.start_run():
         artifact_path="2nd model",
         registered_model_name="Support vector machine",
     )
+
+    mlflow.log_artifact(scaler)
+
