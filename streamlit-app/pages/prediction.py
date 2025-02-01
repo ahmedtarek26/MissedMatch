@@ -1,5 +1,6 @@
 # Import libraries
 import random
+import sqlite3
 import streamlit as st
 import pandas as pd
 from sklearn.metrics import classification_report
