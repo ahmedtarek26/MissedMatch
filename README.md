@@ -20,6 +20,15 @@ you can look at another file called train_artifatcs, in this file you can run th
 `python src/train_artifacts.py`
 
 to register your model you can use `register_model.py` file which contains how to register your model by adding the run id
-you can find the run id through this path in mlflow **open mlflow env >> choose the model >> overview >> Details >> Run ID**
+you can find the run id through this path in mlflow 
+
+**open mlflow env >> choose the model >> overview >> Details >> Run ID**
 
 ## Streamlit app
+
+The streamlit app hosted in the streamlit cloud and you can run it through this link:
+
+https://missedmatch.streamlit.app/
+
+### Streamlit app code
+You can have a look in the streamlit-app folder, in this folder you will find `app.py` which is the main file and the pages folder which contains `analysis.py ` , `home.py` and `prediction.py`
