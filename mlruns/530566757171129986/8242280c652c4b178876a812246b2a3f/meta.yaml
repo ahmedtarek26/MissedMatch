@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/8242280c652c4b178876a812246b2a3f/artifacts
+end_time: 1738370672877
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: 8242280c652c4b178876a812246b2a3f
+run_name: ambitious-trout-976
+run_uuid: 8242280c652c4b178876a812246b2a3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738370668261
+status: 3
+tags: []
+user_id: codespace

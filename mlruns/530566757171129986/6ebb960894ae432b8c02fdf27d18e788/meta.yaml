@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/6ebb960894ae432b8c02fdf27d18e788/artifacts
+end_time: 1738370774074
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: 6ebb960894ae432b8c02fdf27d18e788
+run_name: nimble-dolphin-735
+run_uuid: 6ebb960894ae432b8c02fdf27d18e788
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738370769476
+status: 3
+tags: []
+user_id: codespace

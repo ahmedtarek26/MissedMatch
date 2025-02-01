@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/530566757171129986/6c6b38c2bd4a4b358d324bc563e4739c/artifacts
+end_time: 1738370776668
+entry_point_name: ''
+experiment_id: '530566757171129986'
+lifecycle_stage: active
+run_id: 6c6b38c2bd4a4b358d324bc563e4739c
+run_name: blushing-hen-689
+run_uuid: 6c6b38c2bd4a4b358d324bc563e4739c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738370774084
+status: 3
+tags: []
+user_id: codespace
