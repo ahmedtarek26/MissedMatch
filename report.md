@@ -1,6 +1,6 @@
 **Missed Match app**
  
-# **Abstract** {#abstract .unnumbered}
+# **Abstract**
  
 > Missed Match is a predictive application designed to address the
 > challenge of patient no-shows in healthcare systems. Leveraging a
@@ -268,8 +268,13 @@
 >
 >UML Class Diagram
 >
->![class_diagram](resources/UML Class Diagram.drawio.svg)
- 
+>![class_diagram](resources/Class_Diagram.drawio.svg)
+>
+>UML Sequence Diagram
+>
+>![seq_diagram](resources/Seq_Diagram.drawio.svg)
+>
+>
  
 ## **MLOps approaches**
  
@@ -277,7 +282,7 @@
 > model development, deployment, and monitoring. This ensures
 > reliability, scalability, and reproducibility.
  
-### **Model Development & Registration** {#model-development-registration}
+### **Model Development & Registration** 
  
 > Once the predictive model is built, we register it using MLflow to
 > track experiments and store artifacts. This allows us to monitor model
@@ -293,11 +298,14 @@
 - Mean Absolute Error (MAE)
  
 - Mean Squared Error (MSE)
- 
+
+>
+>![comparing](resources/comparing.png)
+>
 > By storing models in MLflow, we ensure all training runs are logged
 > and can be retrieved for comparison or further tuning.
  
-### **Model Comparison & Performance Monitoring** {#model-comparison-performance-monitoring}
+### **Model Comparison & Performance Monitoring** 
  
 > To make informed decisions about model selection, we use MLflow's
 > parallel coordinates plot, which visualizes multiple performance
@@ -310,14 +318,20 @@
 > hyperparameters, and logs. This ensures that every experiment remains
 > reproducible and that we can deploy the best-performing model when
 > needed.
+>
+>![artifacts](resources/rf_artifacts.png)
+>
  
-### **Database Integration & Model Retraining** {#database-integration-model-retraining}
+### **Database Integration & Model Retraining** 
  
 > To keep our predictions relevant, we connect the model to a SQLite3
 > database. Each time the model runs, it fetches the latest data from
 > the database, ensuring it is always trained on up-to-date patient
 > records. SQLite3 is a lightweight Python library that simplifies data
 > management without requiring a separate database server.
+>
+>![read_db](resources/main.png)
+>
  
 ### **Automated Experiment Tracking**
  
