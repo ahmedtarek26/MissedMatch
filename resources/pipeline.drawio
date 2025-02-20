@@ -1,90 +1,90 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="your-diagram-id">
-    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1500" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
+
         <!-- Data Collection -->
         <mxCell id="2" value="Data Collection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="160" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Data Preprocessing -->
         <mxCell id="3" value="Data Preprocessing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="160" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Data Cleaning -->
         <mxCell id="4" value="Data Cleaning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="40" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Feature Engineering -->
         <mxCell id="5" value="Feature Engineering" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="200" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Scaling/Normalization -->
         <mxCell id="6" value="Scaling/Normalization" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="360" y="240" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Model Training -->
         <mxCell id="7" value="Model Training" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="160" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Random Forest Model -->
         <mxCell id="8" value="Random Forest Model" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="40" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Hyperparameter Tuning -->
         <mxCell id="9" value="Hyperparameter Tuning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="280" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Model Evaluation -->
         <mxCell id="10" value="Model Evaluation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="160" y="540" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- MLflow Integration -->
         <mxCell id="11" value="MLflow Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="160" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Database Integration -->
-        <mxCell id="12" value="Database Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="40" y="740" width="120" height="60" as="geometry" />
+        <mxCell id="12" value="Database Integration" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="740" width="120" height="80" as="geometry" />
         </mxCell>
-        
+
         <!-- Automated Retraining -->
         <mxCell id="13" value="Automated Retraining" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="280" y="740" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Deployment -->
         <mxCell id="14" value="Deployment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="160" y="840" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Streamlit Web Application -->
-        <mxCell id="15" value="Streamlit Web Application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="40" y="940" width="120" height="60" as="geometry" />
+        <mxCell id="15" value="Streamlit Web Application" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="940" width="120" height="80" as="geometry" />
         </mxCell>
-        
+
         <!-- Hosting on Streamlit Cloud -->
-        <mxCell id="16" value="Hosting on Streamlit Cloud" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="280" y="940" width="120" height="60" as="geometry" />
+        <mxCell id="16" value="Hosting on Streamlit Cloud" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="280" y="940" width="120" height="80" as="geometry" />
         </mxCell>
-        
+
         <!-- Monitoring & Feedback -->
         <mxCell id="17" value="Monitoring &amp; Feedback" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="160" y="1040" width="120" height="60" as="geometry" />
         </mxCell>
-        
+
         <!-- Arrows -->
         <mxCell id="18" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="2" target="3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
